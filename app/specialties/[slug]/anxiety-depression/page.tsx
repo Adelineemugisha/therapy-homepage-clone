@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Navbar from '../../components/Navbar.jsx';
-import Footer from '../../components/Footer.jsx';
+import { useState } from "react";
+import Link from "next/link";
+import Navbar from "../../../components/Navbar.jsx";
+import Footer from "../../../components/Footer.jsx";
 
 export default function AnxietyDepressionSpecialty() {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const anxietySigns = [
     "Constant worry",
@@ -163,9 +163,6 @@ export default function AnxietyDepressionSpecialty() {
             ))}
           </div>
         </section>
-
-        <section className="w-full px-8 py-24 md:px-16 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 border-t border-neutral-200/40 bg-[#fdfbf7]/40">
-          <div className="lg:col-span-4 flex flex-col justify-between">
 
         <section className="w-full px-8 py-24 md:px-16 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 border-t border-neutral-200/40 bg-[#fdfbf7]/40">
           <div className="lg:col-span-4 flex flex-col justify-between">
@@ -338,8 +335,10 @@ export default function AnxietyDepressionSpecialty() {
             ))}
           </div>
         </section>
-        <Footer />
+
       </main>
+
+      <Footer />
     </div>
   );
 }

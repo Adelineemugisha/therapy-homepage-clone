@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Navbar from '../../components/Navbar.jsx';
-import Footer from '../../components/Footer.jsx';
+import { useState } from "react";
+import Link from "next/link";
+import Navbar from "../../../components/Navbar.jsx";
+import Footer from "../../../components/Footer.jsx";
 
 export default function SpecialNeedsParentingSpecialty() {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const painPoints = [
     { title: "Isolation", desc: "It feels like nobody truly understands what you’re going through." },
@@ -76,6 +76,7 @@ export default function SpecialNeedsParentingSpecialty() {
               />
             </div>
           </div>
+        
 
           <div className="lg:col-span-7 space-y-6 pl-0 lg:pl-6">
             <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#5e5a57] font-semibold">
@@ -99,6 +100,7 @@ export default function SpecialNeedsParentingSpecialty() {
               </Link>
             </div>
           </div>
+          
         </section>
 
         <section className="w-full px-8 py-20 md:px-16 bg-[#e6dfd5]/20 border-t border-[#e6dfd5]/60">
@@ -165,7 +167,7 @@ export default function SpecialNeedsParentingSpecialty() {
             <h2 className="text-3xl md:text-[40px] font-serif font-light text-[#2c2a29] leading-tight max-w-3xl tracking-tight">
               Even when you feel like you’re just surviving, you’re doing <span className="italic font-serif text-[#5f8d8a] font-normal">so much more</span> than you realize for your child.
             </h2>
-          </div>
+          </div>        </section>
         <section className="w-full px-8 py-20 md:px-16 bg-white border-t border-b border-neutral-200/40">
           <div className="max-w-7xl mx-auto space-y-12">
             <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#5e5a57] font-semibold tracking-widest">
@@ -310,8 +312,6 @@ export default function SpecialNeedsParentingSpecialty() {
         </section>
 
         <section className="w-full px-8 py-24 md:px-16 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-
-        <section className="w-full px-8 py-24 md:px-16 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-4 space-y-2">
             <p className="text-[10px] uppercase tracking-[0.3em] text-[#5e5a57] font-semibold tracking-widest">
               FAQs
@@ -353,7 +353,7 @@ export default function SpecialNeedsParentingSpecialty() {
                 </button>
                 
                 {openFaq === index && (
-                  <div className="pt-3 pb-2 text-sm text-[#5e5a57] font-light leading-relaxed max-w-2xl whitespace-pre-line animate-in fade-in slide-in-from-top-1 duration-200">
+                  <div className="pt-3 pb-2 text-sm text-[#5e5a57] font-light leading-relaxed max-w-2xl whitespace-pre-line">
                     {faq.answer}
                   </div>
                 )}
@@ -361,8 +361,11 @@ export default function SpecialNeedsParentingSpecialty() {
             ))}
           </div>
         </section>
-        <Footer />
+
       </main>
+
+      <Footer />
     </div>
   );
 }
+                  

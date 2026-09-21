@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Navbar from '../../components/Navbar.jsx';
-import Footer from '../../components/Footer.jsx';
+import { useState } from "react";
+import Link from "next/link";
+import Navbar from "../../../components/Navbar.jsx";
+import Footer from "../../../components/Footer.jsx";
 
 export default function SomaticTherapyMethod() {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const criteriaList = [
     "TRAUMA OR PTSD",
@@ -214,5 +214,10 @@ export default function SomaticTherapyMethod() {
             ))}
           </div>
         </section>
-        );
-        }
+
+      </main>
+
+      <Footer />
+    </div>
+  );
+}

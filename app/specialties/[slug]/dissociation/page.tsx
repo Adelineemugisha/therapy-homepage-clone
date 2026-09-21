@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Navbar from '../../components/Navbar.jsx';
-import Footer from '../../components/Footer.jsx';
+import { useState } from "react";
+import Link from "next/link";
+import Navbar from "../../../components/Navbar.jsx";
+import Footer from "../../../components/Footer.jsx";
 
 export default function DissociationSpecialty() {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const dissociationSigns = [
     "Not having a solid sense of identity",
@@ -178,6 +178,7 @@ export default function DissociationSpecialty() {
                   alt="Walking along beach landscape asset" 
                   className="w-full h-full object-cover"
                 />
+                </div>
               </div>
             </div>
           </div>
@@ -277,23 +278,33 @@ export default function DissociationSpecialty() {
 
           <div className="lg:col-span-8 border-t border-neutral-200 divide-y divide-neutral-200/70 w-full">
             {faqs.map((faq, index) => (
-              <div key={index} className="py-4 w-full transition-all duration-200">
+              <div key={index} className="py-5 w-full transition-all duration-200">
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   className="w-full flex items-center justify-between text-left py-1 font-sans text-xs md:text-sm tracking-wide text-[#2c2a29] hover:text-[#5f8d8a] cursor-pointer focus:outline-none group"
                 >
-                <button
-                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                  className="w-full flex items-center justify-between text-left py-1 font-sans text-xs md:text-sm tracking-wide text-[#2c2a29] hover:text-[#5f8d8a] cursor-pointer focus:outline-none group"
-                >
-                  <span className="font-semibold text-[#2c2a29] group-hover:text-[#5f8d8a] transition-colors">{faq.question}</span>
+                  <span className="font-semibold text-[#2c2a29] group-hover:text-[#5f8d8a] transition-colors">
+                    {faq.question}
+                  </span>
                   <span className="text-lg font-light text-neutral-400 group-hover:text-[#5f8d8a] transition-colors">
-                    {openFaq === index ? '−' : '＋'}
+                    {openFaq === index ? "−" : "＋"}
                   </span>
                 </button>
-                
+
                 {openFaq === index && (
-                  <div className="pt-3 pb-2 text-sm text-[#5e5a57] font-light leading-relaxed max-w-2xl whitespace-pre-line animate-in fade-in slide-in-from-top-1 duration-200">
+                  <div className="pt-3 pb-2 text-sm text-[#5e5a57] font-light leading-relaxed max-w-2xl whitespace-pre-line">
                     {faq.answer}
                   </div>
                 )}
+              </div>
+            ))}
+          </div>         
+             </section>
+                    
+               </main>
+                    
+                    <Footer />
+                      </div>
+                      );
+                    }
+                    

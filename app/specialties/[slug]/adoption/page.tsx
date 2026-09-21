@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Navbar from '../../components/Navbar.jsx';
-import Footer from '../../components/Footer.jsx';
+import { useState } from "react";
+import Link from "next/link";
+import Navbar from "../../../components/Navbar.jsx";
+import Footer from "../../../components/Footer.jsx";
 
 export default function AdoptionSpecialty() {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const parentChallenges = [
     "Your child's behavior is increasingly challenging, and you're out of ideas on what to do next.",
@@ -156,9 +156,9 @@ export default function AdoptionSpecialty() {
         <section className="relative w-full h-[55vh] flex items-end justify-start overflow-hidden">
           <div className="absolute inset-0">
             <img 
-              src="https://unsplash.com" 
-              alt="Background image" 
-              className="w-full h-full object-cover filter brightness-[0.5] contrast-[1.01]"
+              src="https://unsplash.com?w=1200&h=660&fit=crop" 
+              alt="Adoption Support Session" 
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="relative z-10 text-left px-8 md:px-16 py-12 text-white max-w-2xl space-y-2">
@@ -211,6 +211,7 @@ export default function AdoptionSpecialty() {
             </div>
 
           </div>
+        </section>
 
         <section className="w-full px-8 py-24 md:px-16 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-4">
@@ -292,7 +293,12 @@ export default function AdoptionSpecialty() {
             <p className="text-[10px] uppercase tracking-[0.3em] text-[#5e5a57] font-semibold tracking-widest">
               FAQs
             </p>
+            <h2 className="text-3xl md:text-4xl font-serif font-light text-[#2c2a29] leading-tight">
+              Frequently asked <br />
+              questions
+            </h2>
           </div>
+
           <div className="lg:col-span-8 border-t border-neutral-200 divide-y divide-neutral-200/70 w-full">
             {faqs.map((faq, index) => (
               <div key={index} className="py-5 w-full transition-all duration-200">
@@ -315,8 +321,8 @@ export default function AdoptionSpecialty() {
             ))}
           </div>
         </section>
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 }

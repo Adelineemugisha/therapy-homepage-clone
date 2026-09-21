@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Navbar from '../../components/Navbar.jsx';
-import Footer from '../../components/Footer.jsx';
+import { useState } from "react";
+import Link from "next/link";
+import Navbar from "../../../components/Navbar.jsx";
+import Footer from "../../../components/Footer.jsx";
 
 export default function CouplesSpecialty() {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const challengesList = [
     "Constant arguments",
@@ -152,9 +152,6 @@ export default function CouplesSpecialty() {
             ))}
           </div>
         </section>
-
-        <section className="w-full px-8 py-20 bg-white border-t border-b border-neutral-200/40">
-          <div className="max-w-7xl mx-auto space-y-12">
 
         <section className="w-full px-8 py-20 bg-white border-t border-b border-neutral-200/40">
           <div className="max-w-7xl mx-auto space-y-12">
@@ -354,9 +351,10 @@ export default function CouplesSpecialty() {
             ))}
           </div>
         </section>
-        </main>
-        <Footer />
-      </div>
+
+      </main>
+
+      <Footer />
     </div>
   );
 }

@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Navbar from '../../components/Navbar.jsx';
-import Footer from '../../components/Footer.jsx';
+import { useState } from "react";
+import Link from "next/link";
+import Navbar from "../../../components/Navbar.jsx";
+import Footer from "../../../components/Footer.jsx";
 
 export default function TraumaSpecialty() {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const traumaSigns = [
     "Feelings of shame",
@@ -133,43 +133,34 @@ export default function TraumaSpecialty() {
 
         <section className="w-full px-8 py-20 md:px-16 bg-white border-t border-b border-neutral-200/40">
           <div className="max-w-7xl mx-auto space-y-12">
-            <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#5e5a57] font-semibold tracking-widest">
-              How We Can Help
-            </p>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-              <div className="lg:col-span-7 space-y-8 text-sm md:text-[15px] text-[#5e5a57] font-light leading-relaxed">
-                <div className="space-y-4">
-                  <h3 className="text-2xl md:text-3xl font-serif font-light text-[#2c2a29] tracking-tight leading-snug">
-                    We are all influenced by our early relationships in life.
-                  </h3>
-                  <p>
-                    In trauma therapy, we'll look at these early attachments and how they may be influencing your deeply held beliefs and feelings about yourself and your experiences. We'll also equip you with psychoeducation to understand how trauma affects the nervous system—because trauma doesn't just exist in your mind, it impacts your body, too. Using somatic (body-based) approaches, we'll address where that trauma is stored in your body and Eye Movement Desensitization and Reprocessing (EMDR) to help you process and release those past experiences.
-                  </p>
+            <div className="space-y-4">
+              <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#5e5a57] font-semibold tracking-widest">How We Can Help</p>
+              <h3 className="text-2xl md:text-[32px] font-serif font-light text-[#2c2a29] tracking-tight leading-snug max-w-4xl">We are all influenced by our early relationships in life.</h3>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start border-t border-neutral-100 pt-8">
+              <div className="lg:col-span-5 w-full flex justify-center lg:justify-start">
+                <div className="w-full max-w-[400px] aspect-[4/5] overflow-hidden relative shadow-sm rounded-xs">
+                  <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=80" alt="Trauma support" className="w-full h-full object-cover" />
                 </div>
-                
-                <div className="space-y-4 pt-4 border-t border-neutral-100">
-                  <h4 className="uppercase tracking-[0.12em] text-[#2c2a29] font-semibold text-xs tracking-widest">
-                    AS WE EXPLORE THE DIFFERENT PARTS OF YOURSELF THAT EMERGED FROM TRAUMA, WE CAN IDENTIFY THOSE THAT MIGHT ENGAGE IN UNHEALTHY BEHAVIORS.
-                  </h4>
-                  <p>
-                    Then we can find strategies to get your needs met in healthier ways and ultimately heal from the trauma that caused those behaviors. When it comes to your relationships with others, we'll help you work to set healthy boundaries, understanding who to allow into your life and who to keep at a distance.
-                  </p>
-                  <p>
-                                <div className="flex flex-col justify-between space-y-6">
-              <div className="space-y-6">
-                <p>
-                  Our ultimate goal is to help you create a vision for the future while nurturing a healthy relationship with yourself and others. This comes through letting go of the hurt and pain that's stored in our body and brain and stepping into our new selves. This process can help you feel grounded and free from the weight you've been carrying, ultimately allowing you to feel purpose, embrace genuine connection, and discover a future that's even brighter than what you thought was possible.
-                </p>
               </div>
-
-              <div className="pt-4">
-                <Link 
-                  href="/contact" 
-                  className="inline-block text-xs uppercase tracking-[0.25em] text-[#2c2a29] font-semibold border-b border-[#2c2a29] pb-0.5 hover:text-[#5f8d8a] hover:border-[#5f8d8a] transition tracking-widest"
-                >
-                  Book an Appointment
-                </Link>
+              <div className="lg:col-span-7 space-y-6 text-sm md:text-[15px] text-[#5e5a57] font-light leading-relaxed pl-0 lg:pl-6">
+                <p>
+                  In trauma therapy, we'll look at early attachments and how they influence your beliefs about yourself and your experiences. We'll also provide psychoeducation about how trauma affects the nervous system—because it doesn't just exist in your mind, it impacts your body. Using somatic (body-based) approaches and Eye Movement Desensitization and Reprocessing (EMDR), we'll address where trauma is stored in your body and help you process and release those experiences.
+                </p>
+                <p>
+                  As we explore the different parts of yourself that emerged from trauma, we can identify those engaging in unhealthy behaviors and find strategies to get your needs met in healthier ways. When it comes to relationships, we'll help you set healthy boundaries and understand who to allow into your life.
+                </p>
+                <p>
+                  Our ultimate goal is to help you create a vision for the future while nurturing a healthy relationship with yourself and others. Through letting go of the hurt stored in your body and brain, you can feel grounded and free from the weight you've been carrying.
+                </p>
+                <div className="pt-4">
+                  <Link
+                    href="/contact"
+                    className="inline-block text-xs uppercase tracking-[0.25em] text-[#2c2a29] font-semibold border-b border-[#2c2a29] pb-0.5 hover:text-[#5f8d8a] hover:border-[#5f8d8a] transition"
+                  >
+                    Book an Appointment
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -277,23 +268,24 @@ export default function TraumaSpecialty() {
                 >
                   <span className="font-semibold text-[#2c2a29] group-hover:text-[#5f8d8a] transition-colors">{faq.question}</span>
                   <span className="text-lg font-light text-neutral-400 group-hover:text-[#5f8d8a] transition-colors">
-                    {openFaq === index ? '−' : '＋'}
+                    {openFaq === index ? "−" : "＋"}
                   </span>
                 </button>
-                
-                {openFaq === index && (
-                  <div className="pt-3 pb-2 text-sm text-[#5e5a57] font-light leading-relaxed max-w-2xl whitespace-pre-line animate-in fade-in slide-in-from-top-1 duration-200">
-                    {faq.answer}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
-        </div>
-        <Footer />
-      </main>
-    </div>
-  );
-}
 
+                {openFaq === index && (
+                  <div className="pt-3 pb-2 text-sm text-[#5e5a57] font-light leading-relaxed max-w-2xl whitespace-pre-line">
+                    {faq.answer}
+               </div>
+                         )}
+                       </div>
+                     ))}
+                   </div>         
+                      </section>
+                             
+                        </main>
+                             
+                             <Footer />
+                               </div>
+                               );
+                             }
+                             

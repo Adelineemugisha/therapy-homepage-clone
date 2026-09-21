@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Navbar from '../../components/Navbar.jsx';
-import Footer from '../../components/Footer.jsx';
+import { useState } from "react";
+import Link from "next/link";
+import Navbar from "../../../components/Navbar.jsx";
+import Footer from "../../../components/Footer.jsx";
 
 export default function BrainspottingMethod() {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const benefitsList = [
     "PERSISTENT ANXIETY OR DEPRESSION",
@@ -50,7 +50,6 @@ export default function BrainspottingMethod() {
 
       <main className="w-full">
 
-        {/* SECTION 1: HERO CANVAS */}
         <section className="w-full max-w-7xl mx-auto px-8 py-16 md:px-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 w-full flex justify-center lg:justify-end">
             <div className="w-full max-w-[440px] aspect-[4/5] bg-neutral-200 overflow-hidden relative shadow-sm rounded-xs">
@@ -160,17 +159,20 @@ export default function BrainspottingMethod() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-7 space-y-6 text-sm md:text-[15px] text-[#5e5a57] font-light leading-relaxed order-2 lg:order-1">
               <h3 className="text-3xl md:text-4xl font-serif font-light text-[#2c2a29] leading-tight">
-            <div className="space-y-6">
-              {benefitsList.map((item, idx) => (
-                <div key={idx} className="border-b border-neutral-200 pb-5">
-                  <h4 className="text-[11px] md:text-xs uppercase tracking-[0.18em] font-semibold text-[#2c2a29]">{item}</h4>
-                </div>
-              ))}
+                Understanding Brainspotting Therapy
+              </h3>
+              <div className="space-y-6">
+                {benefitsList.map((item, idx) => (
+                  <div key={idx} className="border-b border-neutral-200 pb-5">
+                    <h4 className="text-[11px] md:text-xs uppercase tracking-[0.18em] font-semibold text-[#2c2a29]">{item}</h4>
+                  </div>
+                ))}
+              </div>
+              
+              <p className="pt-4 text-sm md:text-[15px] font-light leading-relaxed">
+                If traditional therapies haven't brought the relief you need, Brainspotting can offer a more direct, body-centered approach to accessing and processing trauma. It's a valuable tool for anyone who feels disconnected from their own emotions or weighed down by experiences that feel difficult to fully resolve.
+              </p>
             </div>
-            
-            <p className="pt-4 text-sm md:text-[15px] font-light leading-relaxed">
-              If traditional therapies haven’t brought the relief you need, Brainspotting can offer a more direct, body-centered approach to accessing and processing trauma. It’s a valuable tool for anyone who feels disconnected from their own emotions or weighed down by experiences that feel difficult to fully resolve.
-            </p>
           </div>
         </section>
 
@@ -234,7 +236,6 @@ export default function BrainspottingMethod() {
             </div>
           </div>
         </section>
-        
         <section className="w-full px-8 py-24 md:px-16 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-4 space-y-2">
             <p className="text-[10px] uppercase tracking-[0.3em] text-[#5e5a57] font-semibold tracking-widest">
@@ -270,8 +271,8 @@ export default function BrainspottingMethod() {
         </section>
 
       </main>
+
       <Footer />
     </div>
   );
-}
 }
