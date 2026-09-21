@@ -1,20 +1,66 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    --color-bg-cream: #f7f5f0;
-    --color-text-dark: #2c2a29;
-    --color-text-muted: #5e5a57;
-    --color-accent-teal: #5f8d8a;
+@theme {
+  --color-bg-primary: #fcfbfa;
+  --color-pastel-mint: #b2d6cd;
+  --color-pastel-blue: #7a87b8;
+
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+html, body, main {
+  background-color: var(--color-bg-primary) !important;
+  color: var(--color-pastel-blue) !important;
+  font-family: var(--font-sans) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  scroll-behavior: smooth !important;
   }
 
-  body {
-    background-color: var(--color-bg-cream);
-    color: var(--color-text-dark);
-    font-family: 'Plus Jakarta Sans', sans-serif;
-  }
+section, header, footer, nav, .section-bg {
+  background-color: var(--color-bg-primary) !important;
+  color: var(--color-pastel-blue) !important;
+}
 
-  h1, h2, h3, h4, .font-serif {
-    font-family: 'Playfair Display', Georgia, serif !important;
+.content-box, .card-bg, [class*="card"] {
+  background-color: #ffffff !important;
+  border-color: var(--color-pastel-mint) !important;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-serif) !important;
+  color: var(--color-pastel-blue) !important;
+}
+
+p, span, li, a {
+  color: var(--color-pastel-blue) !important;
+}
+
+hr, .border-b, .border-t, .divider {
+  border-color: var(--color-pastel-mint) !important;
+}
+
+@utility responsive-grid {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 32px !important;
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+}
+
+@media (min-width: 768px) {
+  .responsive-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }

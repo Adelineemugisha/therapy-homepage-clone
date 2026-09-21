@@ -4,25 +4,24 @@ import Link from 'next/link';
 
 export default function AboutPractice() {
   return (
-    <div className="w-full bg-[#f7f5f0] text-[#2c2a29]">
-      
-      <section className="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 px-8 py-16 md:px-16 items-center max-w-7xl mx-auto">
-        <div className="lg:col-span-6 space-y-6">
-          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-[#5e5a57] font-semibold tracking-widest">
-            Therapists in Newbury Park, CA
+    <div className="w-full bg-[#fcfbfa] text-[#7a87b8] font-sans antialiased selection:bg-[#b2d6cd]/30">
+
+      <section className="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 px-6 py-12 md:px-16 lg:py-24 max-w-[1440px] mx-auto items-center">
+        <div className="lg:col-span-6 space-y-6 lg:pr-8">
+          <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#7a87b8]/80 font-semibold">
+            Licensed Clinical Psychologist • Santa Monica, CA
           </p>
-          <h1 className="text-4xl md:text-6xl text-[#2c2a29] font-serif font-light leading-[1.15] max-w-lg tracking-tight">
-            We’re here to help <br />
-            <span className="italic font-serif text-[#5f8d8a] font-normal">you find solid</span> <br />
-            ground again.
+          <h1 className="text-4xl sm:text-5xl md:text-6xl text-[#7a87b8] font-serif font-light leading-[1.15] tracking-tight">
+            We’re here to help <span className="italic font-serif text-[#b2d6cd] font-normal">you</span> <br />
+            find solid ground again.
           </h1>
-          <p className="text-sm md:text-base text-[#5e5a57] font-light max-w-md leading-relaxed">
-            Discover a transformative therapy experience with our dedicated, specialized therapists.
+          <p className="text-sm md:text-base text-[#7a87b8]/90 font-light max-w-md leading-relaxed">
+            Providing evidence-based therapy for adults navigating deep anxiety, chronic stress, burnout, and the lingering effects of past trauma.
           </p>
-          <div className="pt-2">
+          <div className="pt-4">
             <Link 
               href="/contact" 
-              className="text-xs uppercase tracking-[0.25em] text-[#2c2a29] border-b border-[#2c2a29] pb-1 hover:text-[#5f8d8a] hover:border-[#5f8d8a] transition font-medium tracking-widest"
+              className="text-[11px] uppercase tracking-[0.25em] text-[#7a87b8] border-b border-[#7a87b8] pb-1.5 hover:text-[#b2d6cd] hover:border-[#b2d6cd] transition-colors duration-300 font-medium"
             >
               Book an Appointment
             </Link>
@@ -30,239 +29,221 @@ export default function AboutPractice() {
         </div>
 
         <div className="lg:col-span-6 w-full flex justify-center lg:justify-end">
-          <div className="w-full max-w-[460px] aspect-[1.1] relative overflow-hidden shadow-xs">
-            <img 
-              src="https://unsplash.com" 
-              alt="Family on beach layout block" 
-              className="w-full h-full object-cover"
-            />
+          <div className="w-full max-w-[560px] aspect-[1.25] relative overflow-hidden border border-[#b2d6cd]">
+         <img 
+      src="/maya-reynolds.jpg" 
+       alt="Dr. Maya Reynolds, PsyD — Clinical Psychologist in Santa Monica" 
+      className="w-full h-full object-cover"
+          />
           </div>
         </div>
       </section>
 
-      <section className="w-full px-8 py-16 md:px-16 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 border-t border-neutral-200/50">
+      <section className="w-full px-6 py-16 md:px-16 lg:py-24 max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start border-t border-[#b2d6cd]/40">
         <div className="lg:col-span-5">
-          <h2 className="text-2xl md:text-4xl font-serif font-light text-[#2c2a29] leading-snug">
+          <h2 className="text-2xl md:text-[34px] font-serif font-light text-[#7a87b8] leading-[1.35] max-w-md">
             It seems like nobody else understands what you’re going through.
           </h2>
         </div>
-        <div className="lg:col-span-7 space-y-6 text-sm text-[#5e5a57] font-light leading-relaxed">
-          <p className="uppercase tracking-[0.1em] text-[#2c2a29] font-medium text-xs tracking-widest">
-            You could be here as a parent, a spouse, or simply someone trying to navigate the things life has thrown your way.
+        <div className="lg:col-span-7 space-y-6 text-[#7a87b8]/90 font-light leading-[1.7] text-sm md:text-[14.5px] lg:pl-4">
+          <p className="uppercase tracking-[0.1em] text-[#7a87b8] font-medium leading-[1.6]">
+            Many of the people I partner with are high-achieving, thoughtful, and highly self-aware—yet internally feel exhausted, stuck in overthinking, or emotionally on edge.
           </p>
           <p>
-            We know how frustrating it can be trying to make sense of your emotions and balance everyone else’s needs along with your own. Our expertise, lived experiences, and empathetic approach help our clients feel safe and understood in their challenges—no matter what they bring to the table.
+            Clients frequently come to my practice feeling "functional" and put-together on the outside while quietly struggling with constant worry, persistent physical tension, difficulty sleeping, or a heavy sense that they are constantly bracing for something to go wrong.
           </p>
         </div>
       </section>
 
-      <section className="relative w-full h-[55vh] flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-[45vh] min-h-[350px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src="https://unsplash.com" 
-            alt="Family running on beach shoreline grid" 
-            className="w-full h-full object-cover filter brightness-[0.7]"
+      <img 
+        src="https://images.pexels.com/photos/7699503/pexels-photo-7699503.jpeg" 
+         alt="Comfortable therapeutic consulting setting with warm beige armchairs and soft, gentle natural lighting" 
+          className="w-full h-full object-cover border border-[#b2d6cd]"
           />
+
         </div>
-        <div className="relative z-10 max-w-3xl text-center px-6 text-white">
-          <p className="text-2xl md:text-4xl font-serif font-light leading-relaxed tracking-wide">
-            This isn’t the whole story. We’re here to help you write the next chapter.
-          </p>
-        </div>
+       <div className="relative z-10 max-w-4xl text-center px-6">
+        <p className="text-xl sm:text-2xl md:text-[32px] font-serif font-bold leading-[1.5] tracking-wide text-[#191970]! drop-shadow-sm">
+    This isn’t the whole story. We’re here to help you write the next chapter.
+        </p>
+          </div>
       </section>
 
-      <section className="w-full px-8 py-20 md:px-16 max-w-7xl mx-auto space-y-12">
+      <section className="w-full px-6 py-16 md:px-16 lg:py-24 max-w-[1440px] mx-auto space-y-16">
         <div className="space-y-4">
-          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-[#5e5a57] font-semibold tracking-widest">
-            Our Approach
+          <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#7a87b8]/80 font-semibold">
+            Clinical Philosophy
           </p>
-          <h2 className="text-3xl md:text-4xl font-serif font-light text-[#2c2a29] max-w-3xl leading-snug">
-            We believe real change starts with understanding yourself, but we know that’s not enough—you need to know <span className="italic font-serif text-[#5f8d8a] font-normal">how</span> to make that change happen.
+          <h2 className="text-2xl sm:text-3xl md:text-[34px] font-serif font-light text-[#7a87b8] max-w-4xl leading-[1.35]">
+            I take a warm, collaborative, and grounded approach to therapy. Sessions are structured enough to feel supportive, while still leaving intentional space for reflection and depth.
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start pt-4">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           <div className="lg:col-span-5 w-full">
-            <div className="w-full aspect-[4/5] bg-neutral-200 overflow-hidden shadow-xs">
+            <div className="w-full aspect-[1.2] lg:aspect-[1.25] overflow-hidden border border-[#b2d6cd]">
               <img 
-                src="https://unsplash.com" 
-                alt="Walk along beach layout illustration" 
+                src="https://images.pexels.com/photos/8560658/pexels-photo-8560658.jpeg" 
+                alt="Comfortable therapeutic consulting setting" 
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
-          <div className="lg:col-span-7 text-sm text-[#5e5a57] font-light leading-relaxed space-y-6">
-            <h4 className="uppercase tracking-[0.15em] text-[#2c2a29] font-semibold text-xs tracking-widest">
-              That’s where we come in.
+          <div className="lg:col-span-7 text-[#7a87b8]/90 font-light leading-[1.7] text-sm md:text-[14.5px] space-y-6 lg:pt-2">
+            <h4 className="uppercase tracking-[0.15em] text-[#7a87b8] font-semibold text-xs">
+              Paced with safety and care.
             </h4>
             <p>
-              We’re here to listen, to honor what you’ve been through, and to help you make sense of your experiences, without judgment or preconceived agendas. We also recognize that this can be a vulnerable experience, especially if you’re used to being someone who has managed it all on your own before. This is a place where you can be free to show up exactly as you are knowing that we’re proud of you and are ready to help you feel grounded, even when life feels chaotic.
+              Trauma work is a core pillar of my practice. I work deeply with adults who have experienced single-incident trauma as well as more complex, long-standing patterns stemming from childhood hardships, relationship distress, or chronic systemic stress. My approach is paced carefully, keeping safety, stabilization, and regulation at the center of our work.
             </p>
             <p>
-              Our goal is to not only help you understand yourself on a deeper level but to also give you practical skills you can use in your daily life. We expect you to show up, not just physically, but with a willingness to reflect, apply what you’ve learned, and engage in this work of healing. We believe that growth happens through consistency, both in and out of sessions.
+              I believe therapy works best when you feel respected, heard, and actively involved. My goal is not just temporary symptom relief, but helping you build long-term insight, deep resilience, and a healthier, more compassionate relationship with yourself.
             </p>
             
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
-              <div className="space-y-3">
+            <div className="w-full grid grid-cols-1 gap-8 pt-6">
+              <div className="space-y-6">
                 <p>
-                  Together, we’ll tackle the specific challenges you’re facing—conflict in your relationships, stress at work, or feeling disconnected from yourself or others.
-                </p>
-                <p>
-                  We know that no one else has lived your life as you, so we’ll take the time to understand your experience not just as therapists, but as people who genuinely care. You don’t need to have it all figured out, you just need to be ready to take those first steps. When everything else feels unsteady, we hope to be a place of safety and stability in your life.
+                  Together, we will tackle the unique challenges holding you back—whether that is career burnout, relationship patterns, or feeling disconnected from your body and your emotions.
                 </p>
                 <div className="pt-4">
                   <Link 
-              href="/contact"
-                    className="inline-block border border-[#2c2a29] px-7 py-3 rounded-[50%_50%_50%_50%_/_50%_50%_50%_50%] text-xs uppercase tracking-[0.15em] font-medium text-[#2c2a29] hover:bg-[#2c2a29] hover:text-white transition duration-300 min-w-[130px] text-center"
+                    href="/contact"
+                    className="inline-block border border-[#7a87b8]/60 px-8 py-3 rounded-full text-[11px] uppercase tracking-[0.2em] font-medium text-[#7a87b8] hover:bg-[#7a87b8] hover:text-white transition-all duration-300 min-w-[150px] text-center"
                   >
-                    Schedule Now
+                    Schedule a Consultation
                   </Link>
                 </div>
               </div>
-              <div className="w-full aspect-square md:aspect-[4/5] bg-neutral-100 overflow-hidden shadow-xs">
-                <img 
-                  src="https://unsplash.com" 
-                  alt="Sea ripple texture panel" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="team" className="w-full bg-[#fdfbf7] border-t border-b border-neutral-200/40 px-8 py-20 md:px-16">
-        <div className="max-w-7xl mx-auto space-y-12">
-          <div className="space-y-3">
-            <h2 className="text-3xl md:text-4xl font-serif font-light text-[#2c2a29]">
-              Meet the Team
-            </h2>
-            <p className="text-xs md:text-sm text-[#5e5a57] font-light max-w-xl leading-relaxed">
-              Take a look at the faces of Conejo Valley Family Counseling—therapists who are dedicated to helping you grow and live your best life.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-4">
-            <div className="bg-white border border-neutral-100 p-6 flex flex-col items-center text-center space-y-4 shadow-2xs">
-              <div className="w-full aspect-[4/5] bg-neutral-200 overflow-hidden relative">
-                <img 
-                  src="https://unsplash.com" 
-                  alt="Jennifer Anderson profile picture" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="font-serif text-lg font-normal text-[#2c2a29]">Jennifer Anderson</h3>
-              <Link 
-                href="/team/jennifer-anderson" 
-                className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#2c2a29] border-b border-[#2c2a29]/60 pb-0.5 hover:text-[#5f8d8a] hover:border-[#5f8d8a] transition"
-              >
-                Read Bio
-              </Link>
-            </div>
-            <div className="bg-white border border-neutral-100 p-6 flex flex-col items-center text-center space-y-4 shadow-2xs">
-              <div className="w-full aspect-[4/5] bg-neutral-200 overflow-hidden relative">
-                <img 
-                  src="https://unsplash.com" 
-                  alt="Heather Williams-Baumgart profile picture" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="font-serif text-lg font-normal text-[#2c2a29]">Heather Williams-Baumgart</h3>
-              <Link 
-                href="/team/heather-williams-baumgart" 
-                className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#2c2a29] border-b border-[#2c2a29]/60 pb-0.5 hover:text-[#5f8d8a] hover:border-[#5f8d8a] transition"
-              >
-                Read Bio
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full px-8 py-16 md:px-16 bg-[#e6dfd5] text-[#2c2a29]">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-sm leading-relaxed">
-          <div className="space-y-3">
-            <h4 className="font-serif text-lg font-normal">Expertise.</h4>
-            <p className="font-light text-[#5e5a57]">
-              We’ve spent years honing our skills and knowledge, but we never stop learning from our clients. Every session allows us the opportunity to help you grow while deepening our understanding of what truly helps people. As we work to help you uncover patterns, you’ll gain practical tools to use in your daily life and feel empowered to make real, lasting changes.
-            </p>
-          </div>
-          <div className="space-y-3">
-            <h4 className="font-serif text-lg font-normal">Understanding.</h4>
-            <p className="font-light text-[#5e5a57]">
-              Your story is your own, and we honor that. Our team takes the time to listen and really understand what it’s like to walk in your shoes. Whether it’s your relationships, your work, or the way you move through the world, we’re here to listen. Our approach isn’t one-size-fits-all because your experience is unique, and we believe the way you’re supported should be, too.
-            </p>
-          </div>
-          <div className="space-y-3">
-            <h4 className="font-serif text-lg font-normal">Transformation.</h4>
-            <p className="font-light text-[#5e5a57]">
-              True change doesn’t happen overnight but it does happen with commitment and consistency. We believe in working alongside you to create real, tangible shifts—not just in how you feel but in how you live. With our support, you’ll build a stronger foundation, find your footing, and move forward with more clarity, confidence, and connection to yourself and others.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="methods-list" className="w-full px-8 py-20 md:px-16 bg-white max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <section id="methods-list" className="w-full px-6 py-20 md:px-16 lg:py-28 bg-[#fcfbfa] max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start border-t border-[#b2d6cd]/40">
         <div className="lg:col-span-4">
-          <h2 className="text-3xl md:text-4xl font-serif font-light text-[#2c2a29]">
-            Some of the <br />
-            <span className="italic font-serif text-[#5f8d8a] font-normal">methods</span> we use
+          <h2 className="text-3xl md:text-[36px] font-serif font-light text-[#7a87b8] leading-[1.25]">
+            Evidence-Based <br />
+            <span className="italic font-serif text-[#b2d6cd] font-normal">methods</span> <br />
+            I integrate
           </h2>
         </div>
-        <div className="lg:col-span-8 border-t border-neutral-200 divide-y divide-neutral-100 text-xs md:text-sm font-sans uppercase tracking-[0.15em] font-medium text-[#2c2a29]">
-          {['Somatic Therapy', 'Eye Movement Desensitization & Reprocessing (EMDR)', 'Emotionally Focused Therapy (EFT)', 'Internal Family Systems Informed', 'Cognitive Behavioral Therapy (CBT)', 'Dialectical Behavioral Therapy (DBT)', 'Brainspotting'].map((method, idx) => (
-            <div key={idx} className="py-5 flex items-center gap-4 cursor-pointer hover:text-[#5f8d8a] transition tracking-wider">
-              <span className="text-base font-light text-neutral-400">＋</span>
+        <div className="lg:col-span-8 border-t border-[#b2d6cd] divide-y divide-[#b2d6cd]/40 text-xs md:text-[13px] font-sans uppercase tracking-[0.2em] font-medium text-[#7a87b8]">
+          {[
+            'Cognitive Behavioral Therapy (CBT)', 
+            'Eye Movement Desensitization and Reprocessing (EMDR)', 
+            'Mindfulness-Based Practices',
+            'Body-Oriented & Somatic Techniques'
+          ].map((method, idx) => (
+            <div key={idx} className="py-[22px] flex items-center gap-4 cursor-pointer hover:text-[#b2d6cd] transition-colors duration-300">
+              <span className="text-[15px] font-light text-[#7a87b8]/40 -mt-0.5">＋</span>
               <span>{method}</span>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="w-full px-8 py-20 md:px-16 bg-[#e6dfd5]/40 border-t border-b border-neutral-200/30">
-        <div className="max-w-5xl mx-auto bg-[#fdfbf7] p-8 md:p-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center shadow-2xs border border-neutral-200/20">
-          <div className="md:col-span-5 w-full aspect-[4/5] bg-neutral-200 overflow-hidden">
+      <section id="our-office" className="w-full px-6 py-20 md:px-16 lg:py-28 bg-white border-t border-b border-[#b2d6cd]/30">
+        <div className="max-w-[1440px] mx-auto space-y-12">
+          <div className="space-y-4">
+            <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#7a87b8]/80 font-semibold">
+              In-Person Care
+            </p>
+            <h2 className="text-3xl md:text-[38px] font-serif font-light text-[#7a87b8]">
+              Our Office: A Space for Healing
+            </h2>
+            <p className="text-sm md:text-base text-[#7a87b8]/90 font-light max-w-2xl leading-relaxed">
+              Located in coastal Santa Monica, the office is intentionally designed to be a quiet, private sanctuary where you can step away from the fast-paced external environment, decompress, and focus completely on your well-being.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+            <div className="flex flex-col space-y-3">
+              <div className="w-full aspect-[1.35] overflow-hidden border border-[#b2d6cd]">
+               <img 
+           src="/office-1.jpg" 
+           alt="Bright, welcoming private office consulting room with comfortable seating" 
+          className="w-full h-full object-cover"
+             />
+
+              </div>
+            </div>
+            <div className="flex flex-col space-y-3">
+              <div className="w-full aspect-[1.35] overflow-hidden border border-[#b2d6cd]">
+                <img 
+             src="/office-2.jpg" 
+             alt="A clean, calm reception space emphasizing client privacy and safety" 
+           className="w-full h-full object-cover"
+             />
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm leading-[1.7] text-[#7a87b8]/90 font-light">
+            <div className="space-y-2">
+              <h4 className="font-serif text-lg font-normal text-[#7a87b8]">Location Mention.</h4>
+              <p>Conveniently located at 123th Street 45 W, Santa Monica, CA 90401. Accessible to professionals and residents across West Los Angeles.</p>
+            </div>
+            <div className="space-y-2">
+              <h4 className="font-serif text-lg font-normal text-[#7a87b8]">Hybrid Availability.</h4>
+              <p>I provide consistent, face-to-face in-person sessions from this office alongside secure, encrypted telehealth visits for clients residing across California.</p>
+            </div>
+            <div className="space-y-2">
+              <h4 className="font-serif text-lg font-normal text-[#7a87b8]">Comfort & Privacy.</h4>
+              <p>The space utilizes clean air purification, soundproofing, and minimalist elements to help your nervous system feel regulated and secure the moment you arrive.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full px-6 py-16 md:px-16 lg:py-24 bg-white max-w-[1440px] mx-auto">
+        <div className="w-full bg-[#fcfbfa] border border-[#b2d6cd] px-6 py-12 md:p-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-5 w-full aspect-[1.15] overflow-hidden border border-[#b2d6cd]">
             <img 
-              src="https://unsplash.com" 
-              alt="Founder portrait presentation" 
+              src="https://images.pexels.com/photos/7903156/pexels-photo-7903156.jpeg"
+              alt="Dr. Maya Reynolds office consultation area" 
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="md:col-span-7 space-y-4">
-            <h3 className="text-2xl md:text-3xl font-serif font-light text-[#2c2a29]">
-              A <span className="italic font-serif text-[#5f8d8a] font-normal">note</span> from our founder
+          <div className="lg:col-span-7 space-y-6 lg:pl-4">
+            <h3 className="text-2xl md:text-3xl font-serif font-light text-[#7a87b8]">
+              A <span className="italic font-serif text-[#b2d6cd] font-normal">note</span> from Dr. Reynolds
             </h3>
-            <blockquote className="text-sm font-serif italic text-[#5e5a57] leading-relaxed">
-              "Starting Conejo Valley Counseling in 2014 and witnessing what it has become is one of the greatest privileges of my life. Therapy has been a deeply transformative experience for me personally, and it’s fueled my passion for helping others through this powerful process. I’m grateful every day to work alongside incredible therapists who are dedicated to helping people heal and find hope. We all have our own stories, and it’s an honor to be part of a team that helps people reclaim theirs."
+            <blockquote className="text-sm md:text-[15px] font-light text-[#7a87b8]/90 leading-[1.7]">
+              "If you’re looking for a therapist who combines practical tools with depth-oriented work—and who understands the realities of living and working in a fast-paced environment—I may be a good fit."
             </blockquote>
-            <p className="text-xs uppercase tracking-[0.15em] font-semibold text-[#2c2a29] tracking-widest">
-              — Jennifer Anderson, LMFT
+            <p className="text-[11px] uppercase tracking-[0.25em] font-semibold text-[#7a87b8] pt-2">
+              — Dr. Maya Reynolds, PsyD
             </p>
           </div>
         </div>
       </section>
 
-      <section className="w-full px-8 py-20 md:px-16 bg-white text-center">
-        <div className="max-w-2xl mx-auto space-y-6">
-          <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#5e5a57] font-semibold tracking-widest">
-            Book an Appointment
+      <section className="w-full px-6 py-20 md:px-16 lg:py-32 bg-[#fcfbfa] text-center max-w-[1440px] mx-auto">
+        <div className="max-w-3xl mx-auto space-y-6">
+          <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#7a87b8]/80 font-semibold">
+            Office Address: 123th Street 45 W, Santa Monica, CA 90401
           </p>
-          <h2 className="text-3xl md:text-5xl font-serif font-light text-[#2c2a29] leading-tight">
-            It’s time to close the gap between the life you want and the life you’re <span className="italic font-serif text-[#5f8d8a] font-normal">living.</span>
+          <h2 className="text-3xl sm:text-4xl md:text-[46px] font-serif font-light text-[#7a87b8] leading-[1.25]">
+            It’s time to close the gap between <br className="hidden sm:inline" />
+            the life you want and the life <br className="hidden sm:inline" />
+            you’re <span className="italic font-serif text-[#b2d6cd] font-normal">living.</span>
           </h2>
-          <p className="text-xs md:text-sm text-[#5e5a57] font-light leading-relaxed max-w-md mx-auto">
-            Sessions available for you both online and in-person based in Newbury Park.
+          <p className="text-xs md:text-sm text-[#7a87b8]/90 font-light leading-relaxed max-w-md mx-auto pt-2">
+            In addition to trauma and anxiety, I frequently support clients dealing with professional burnout, perfectionism, and high internal pressure.
           </p>
-          <div className="pt-4">
+          <div className="pt-6">
             <Link 
               href="/contact" 
-              className="inline-block border border-[#2c2a29] px-8 py-3.5 rounded-[50%_50%_50%_50%_/_50%_50%_50%_50%] text-xs uppercase tracking-[0.2em] font-medium text-[#2c2a29] hover:bg-[#2c2a29] hover:text-white transition duration-300 min-w-[150px] tracking-widest text-center"
+              className="inline-block border border-[#7a87b8]/60 px-10 py-3.5 rounded-full text-[11px] uppercase tracking-[0.2em] font-medium text-[#7a87b8] hover:bg-[#7a87b8] hover:text-white transition-all duration-300 min-w-[165px]"
             >
               Book Now
             </Link>
           </div>
         </div>
       </section>
+
     </div>
   );
 }
