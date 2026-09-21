@@ -1,0 +1,176 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Conejo Valley Family Counseling" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: Conejo Valley
+        - generic [ref=e6]: Family Counseling
+      - generic [ref=e7]:
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: "#about"
+        - button "Our Team" [ref=e10] [cursor=pointer]
+        - button "Specialties" [ref=e12] [cursor=pointer]
+        - button "Methods" [ref=e14] [cursor=pointer]
+        - link "FAQs" [ref=e15] [cursor=pointer]:
+          - /url: "#faqs"
+        - link "Contact" [ref=e16] [cursor=pointer]:
+          - /url: /contact
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - paragraph [ref=e20]: Therapists in Newbury Park, CA
+          - heading "We’re here to help you find solid ground again." [level=1] [ref=e21]
+          - paragraph [ref=e22]: Discover a transformative therapy experience with our dedicated, specialized therapists.
+          - link "Book an Appointment" [ref=e24] [cursor=pointer]:
+            - /url: /contact
+        - img "Family on beach layout block" [ref=e27]
+      - generic [ref=e28]:
+        - heading "It seems like nobody else understands what you’re going through." [level=2] [ref=e30]
+        - generic [ref=e31]:
+          - paragraph [ref=e32]: You could be here as a parent, a spouse, or simply someone trying to navigate the things life has thrown your way.
+          - paragraph [ref=e33]: We know how frustrating it can be trying to make sense of your emotions and balance everyone else’s needs along with your own. Our expertise, lived experiences, and empathetic approach help our clients feel safe and understood in their challenges—no matter what they bring to the table.
+      - generic [ref=e34]:
+        - img "Family running on beach shoreline grid" [ref=e36]
+        - paragraph [ref=e38]: This isn’t the whole story. We’re here to help you write the next chapter.
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - paragraph [ref=e41]: Our Approach
+          - heading "We believe real change starts with understanding yourself, but we know that’s not enough—you need to know how to make that change happen." [level=2] [ref=e42]
+        - generic [ref=e43]:
+          - img "Walk along beach layout illustration" [ref=e46]
+          - generic [ref=e47]:
+            - heading "That’s where we come in." [level=4] [ref=e48]
+            - paragraph [ref=e49]: We’re here to listen, to honor what you’ve been through, and to help you make sense of your experiences, without judgment or preconceived agendas. We also recognize that this can be a vulnerable experience, especially if you’re used to being someone who has managed it all on your own before. This is a place where you can be free to show up exactly as you are knowing that we’re proud of you and are ready to help you feel grounded, even when life feels chaotic.
+            - paragraph [ref=e50]: Our goal is to not only help you understand yourself on a deeper level but to also give you practical skills you can use in your daily life. We expect you to show up, not just physically, but with a willingness to reflect, apply what you’ve learned, and engage in this work of healing. We believe that growth happens through consistency, both in and out of sessions.
+            - generic [ref=e51]:
+              - generic [ref=e52]:
+                - paragraph [ref=e53]: Together, we’ll tackle the specific challenges you’re facing—conflict in your relationships, stress at work, or feeling disconnected from yourself or others.
+                - paragraph [ref=e54]: We know that no one else has lived your life as you, so we’ll take the time to understand your experience not just as therapists, but as people who genuinely care. You don’t need to have it all figured out, you just need to be ready to take those first steps. When everything else feels unsteady, we hope to be a place of safety and stability in your life.
+                - link "Schedule Now" [ref=e56] [cursor=pointer]:
+                  - /url: /contact
+              - img "Sea ripple texture panel" [ref=e58]
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - heading "Meet the Team" [level=2] [ref=e62]
+          - paragraph [ref=e63]: Take a look at the faces of Conejo Valley Family Counseling—therapists who are dedicated to helping you grow and live your best life.
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - img "Jennifer Anderson profile picture" [ref=e67]
+            - heading "Jennifer Anderson" [level=3] [ref=e68]
+            - link "Read Bio" [ref=e69] [cursor=pointer]:
+              - /url: /team/jennifer-anderson
+          - generic [ref=e70]:
+            - img "Heather Williams-Baumgart profile picture" [ref=e72]
+            - heading "Heather Williams-Baumgart" [level=3] [ref=e73]
+            - link "Read Bio" [ref=e74] [cursor=pointer]:
+              - /url: /team/heather-williams-baumgart
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - heading "Expertise." [level=4] [ref=e78]
+          - paragraph [ref=e79]: We’ve spent years honing our skills and knowledge, but we never stop learning from our clients. Every session allows us the opportunity to help you grow while deepening our understanding of what truly helps people. As we work to help you uncover patterns, you’ll gain practical tools to use in your daily life and feel empowered to make real, lasting changes.
+        - generic [ref=e80]:
+          - heading "Understanding." [level=4] [ref=e81]
+          - paragraph [ref=e82]: Your story is your own, and we honor that. Our team takes the time to listen and really understand what it’s like to walk in your shoes. Whether it’s your relationships, your work, or the way you move through the world, we’re here to listen. Our approach isn’t one-size-fits-all because your experience is unique, and we believe the way you’re supported should be, too.
+        - generic [ref=e83]:
+          - heading "Transformation." [level=4] [ref=e84]
+          - paragraph [ref=e85]: True change doesn’t happen overnight but it does happen with commitment and consistency. We believe in working alongside you to create real, tangible shifts—not just in how you feel but in how you live. With our support, you’ll build a stronger foundation, find your footing, and move forward with more clarity, confidence, and connection to yourself and others.
+      - generic [ref=e86]:
+        - heading "Some of the methods we use" [level=2] [ref=e88]
+        - generic [ref=e89]:
+          - generic [ref=e90] [cursor=pointer]:
+            - generic [ref=e91]: ＋
+            - generic [ref=e92]: Somatic Therapy
+          - generic [ref=e93] [cursor=pointer]:
+            - generic [ref=e94]: ＋
+            - generic [ref=e95]: Eye Movement Desensitization & Reprocessing (EMDR)
+          - generic [ref=e96] [cursor=pointer]:
+            - generic [ref=e97]: ＋
+            - generic [ref=e98]: Emotionally Focused Therapy (EFT)
+          - generic [ref=e99] [cursor=pointer]:
+            - generic [ref=e100]: ＋
+            - generic [ref=e101]: Internal Family Systems Informed
+          - generic [ref=e102] [cursor=pointer]:
+            - generic [ref=e103]: ＋
+            - generic [ref=e104]: Cognitive Behavioral Therapy (CBT)
+          - generic [ref=e105] [cursor=pointer]:
+            - generic [ref=e106]: ＋
+            - generic [ref=e107]: Dialectical Behavioral Therapy (DBT)
+          - generic [ref=e108] [cursor=pointer]:
+            - generic [ref=e109]: ＋
+            - generic [ref=e110]: Brainspotting
+      - generic [ref=e112]:
+        - img "Founder portrait presentation" [ref=e114]
+        - generic [ref=e115]:
+          - heading "A note from our founder" [level=3] [ref=e116]
+          - blockquote [ref=e117]: "\"Starting Conejo Valley Counseling in 2014 and witnessing what it has become is one of the greatest privileges of my life. Therapy has been a deeply transformative experience for me personally, and it’s fueled my passion for helping others through this powerful process. I’m grateful every day to work alongside incredible therapists who are dedicated to helping people heal and find hope. We all have our own stories, and it’s an honor to be part of a team that helps people reclaim theirs.\""
+          - paragraph [ref=e118]: — Jennifer Anderson, LMFT
+      - generic [ref=e120]:
+        - paragraph [ref=e121]: Book an Appointment
+        - heading "It’s time to close the gap between the life you want and the life you’re living." [level=2] [ref=e122]
+        - paragraph [ref=e123]: Sessions available for you both online and in-person based in Newbury Park.
+        - link "Book Now" [ref=e125] [cursor=pointer]:
+          - /url: /contact
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - heading "Our Sanctuary Space" [level=2] [ref=e128]
+        - heading "A calm, intentional space carved out for your healing journey." [level=3] [ref=e129]
+        - paragraph [ref=e130]: Our physical office space is intentionally designed with organic textures, soft indirect lighting, and absolute sensory safety in mind. Whether arriving for hybrid check-ins or in-person therapeutic sessions, your absolute privacy, safety, and deep comfort remain our highest architectural priorities.
+        - generic [ref=e131]: 📍 Located discreetly with full private parking accessibility.
+      - generic [ref=e132]:
+        - img "Minimalist therapy consultation office room" [ref=e134]
+        - img "Comfortable seating lounge area detail" [ref=e136]
+    - generic [ref=e137]:
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - generic [ref=e140]:
+            - generic [ref=e141]: Conejo Valley
+            - generic [ref=e142]: Family Counseling
+          - paragraph [ref=e143]: We want to make getting started simple. You're welcome to come into our office in Newbury Park or schedule virtual appointments from anywhere in CA—whatever works best for you.
+        - generic [ref=e144]:
+          - heading "Navigate" [level=5] [ref=e145]
+          - generic [ref=e146]:
+            - link "Home" [ref=e147] [cursor=pointer]:
+              - /url: /
+            - link "About" [ref=e148] [cursor=pointer]:
+              - /url: "#about"
+            - link "FAQs" [ref=e149] [cursor=pointer]:
+              - /url: "#faqs"
+            - link "Contact" [ref=e150] [cursor=pointer]:
+              - /url: /contact
+        - generic [ref=e151]:
+          - heading "Our Team" [level=5] [ref=e152]
+          - generic [ref=e153]:
+            - link "Jennifer Anderson" [ref=e154] [cursor=pointer]:
+              - /url: /team/jennifer-anderson
+            - generic [ref=e155]: Heather Williams-Baumgart
+            - generic [ref=e156]: Autumn Bodily
+            - generic [ref=e157]: Candace Bletscher
+            - generic [ref=e158]: Samantha Johnson
+            - generic [ref=e159]: Andrea Watkins
+            - generic [ref=e160]: Rosa Gomez
+            - generic [ref=e161]: Chad Flores
+        - generic [ref=e162]:
+          - heading "Contact" [level=5] [ref=e163]
+          - generic [ref=e164]:
+            - paragraph [ref=e165]: 925 Broadbeck Dr
+            - paragraph [ref=e166]: Suites 200 and 225
+            - paragraph [ref=e167]: Newbury Park, CA 91320
+          - paragraph [ref=e168]:
+            - link "info@conejovalleycounseling.com" [ref=e169] [cursor=pointer]:
+              - /url: mailto:info@conejovalleycounseling.com
+          - paragraph [ref=e170]: 805.242.3120
+          - generic [ref=e171]:
+            - paragraph [ref=e172]: Serving Thousand Oaks,
+            - paragraph [ref=e173]: Westlake Village,
+            - paragraph [ref=e174]: Camarillo, Moorpark, &
+            - paragraph [ref=e175]: Simi Valley
+      - generic [ref=e177]:
+        - generic [ref=e178] [cursor=pointer]: Terms
+        - generic [ref=e179]: "|"
+        - generic [ref=e180] [cursor=pointer]: Privacy Policy
+        - generic [ref=e181]: "|"
+        - generic [ref=e182] [cursor=pointer]: Disclaimer
+        - generic [ref=e183]: "|"
+        - generic [ref=e184]: Website by Walker Strategy Co.
+  - button "Open Next.js Dev Tools" [ref=e190] [cursor=pointer]
+  - alert [ref=e194]

@@ -1,0 +1,74 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - navigation [ref=f1e3]:
+      - link "Conejo Valley Family Counseling" [ref=f1e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e5]: Conejo Valley
+        - generic [ref=f1e6]: Family Counseling
+      - generic [ref=f1e7]:
+        - link "About" [ref=f1e8] [cursor=pointer]:
+          - /url: "#about"
+        - button "Our Team" [ref=f1e10] [cursor=pointer]
+        - button "Specialties" [ref=f1e12] [cursor=pointer]
+        - button "Methods" [ref=f1e14] [cursor=pointer]
+        - link "FAQs" [ref=f1e15] [cursor=pointer]:
+          - /url: "#faqs"
+        - link "Contact" [ref=f1e16] [cursor=pointer]:
+          - /url: /contact
+    - main [ref=f1e17]:
+      - heading "dissociation" [level=1] [ref=f1e18]
+      - paragraph [ref=f1e19]: Learn more about our approach to dissociation.
+    - contentinfo [ref=f1e20]:
+      - generic [ref=f1e21]:
+        - generic [ref=f1e22]:
+          - generic [ref=f1e23]:
+            - generic [ref=f1e24]: Conejo Valley
+            - generic [ref=f1e25]: Family Counseling
+          - paragraph [ref=f1e26]: We want to make getting started simple. You're welcome to come into our office in Newbury Park or schedule virtual appointments from anywhere in CA—whatever works best for you.
+        - generic [ref=f1e27]:
+          - heading "Navigate" [level=5] [ref=f1e28]
+          - generic [ref=f1e29]:
+            - link "Home" [ref=f1e30] [cursor=pointer]:
+              - /url: /
+            - link "About" [ref=f1e31] [cursor=pointer]:
+              - /url: "#about"
+            - link "FAQs" [ref=f1e32] [cursor=pointer]:
+              - /url: "#faqs"
+            - link "Contact" [ref=f1e33] [cursor=pointer]:
+              - /url: /contact
+        - generic [ref=f1e34]:
+          - heading "Our Team" [level=5] [ref=f1e35]
+          - generic [ref=f1e36]:
+            - link "Jennifer Anderson" [ref=f1e37] [cursor=pointer]:
+              - /url: /team/jennifer-anderson
+            - generic [ref=f1e38]: Heather Williams-Baumgart
+            - generic [ref=f1e39]: Autumn Bodily
+            - generic [ref=f1e40]: Candace Bletscher
+            - generic [ref=f1e41]: Samantha Johnson
+            - generic [ref=f1e42]: Andrea Watkins
+            - generic [ref=f1e43]: Rosa Gomez
+            - generic [ref=f1e44]: Chad Flores
+        - generic [ref=f1e45]:
+          - heading "Contact" [level=5] [ref=f1e46]
+          - generic [ref=f1e47]:
+            - paragraph [ref=f1e48]: 925 Broadbeck Dr
+            - paragraph [ref=f1e49]: Suites 200 and 225
+            - paragraph [ref=f1e50]: Newbury Park, CA 91320
+          - paragraph [ref=f1e51]:
+            - link "info@conejovalleycounseling.com" [ref=f1e52] [cursor=pointer]:
+              - /url: mailto:info@conejovalleycounseling.com
+          - paragraph [ref=f1e53]: 805.242.3120
+          - generic [ref=f1e54]:
+            - paragraph [ref=f1e55]: Serving Thousand Oaks,
+            - paragraph [ref=f1e56]: Westlake Village,
+            - paragraph [ref=f1e57]: Camarillo, Moorpark, &
+            - paragraph [ref=f1e58]: Simi Valley
+      - generic [ref=f1e60]:
+        - generic [ref=f1e61] [cursor=pointer]: Terms
+        - generic [ref=f1e62]: "|"
+        - generic [ref=f1e63] [cursor=pointer]: Privacy Policy
+        - generic [ref=f1e64]: "|"
+        - generic [ref=f1e65] [cursor=pointer]: Disclaimer
+        - generic [ref=f1e66]: "|"
+        - generic [ref=f1e67]: Website by Walker Strategy Co.
+  - button "Open Next.js Dev Tools" [ref=f1e73] [cursor=pointer]
